@@ -96,6 +96,16 @@ h6 {
 .nav-link:focus {
   color: #404bbf;
 }
+.active {
+  position: relative;
+}
+.active:active::after {
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background: #404bbf;
+  position: absolute;
+}
 .address {
   font-style: normal;
   margin-left: auto;
@@ -107,7 +117,11 @@ h6 {
 }
 /*---Hero---*/
 .hero {
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ bgi.jpg);
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -163,9 +177,25 @@ h6 {
 }
 
 .advantages-box {
-  width: calc((100% - 2 * 24px) / 3);
+  width: calc((100% - 3 * 24px) / 4);
 }
-
+.icon-box {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  background: #f4f4fd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.icon {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
 .advantages-title {
   font-weight: 500;
   font-size: 20px;
