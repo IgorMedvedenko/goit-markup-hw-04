@@ -67,6 +67,9 @@ h6 {
   color: #434455;
   display: inline-block;
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -91,6 +94,9 @@ h6 {
   color: #2e2f42;
   display: inline-block;
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -157,6 +163,9 @@ h6 {
   border: none;
   margin: 0 auto;
   white-space: nowrap;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -276,6 +285,9 @@ h6 {
   justify-content: center;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-icon {
   display: block;
@@ -303,16 +315,42 @@ h6 {
 }
 .portfolio-holder {
   width: calc((100% - 2 * 24px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-holder:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+.portfolio-holder:hover .portfolio-holder-info {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  transform: translateY(0);
+}
+
 .portfolio-img {
   background-color: #ffffff;
   display: block;
   max-width: 100%;
   height: auto;
+}
+.portfolio-info-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-holder-info {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  position: absolute;
+  padding: 40px 32px 164px 32px;
+  background: #4d5ae5;
+  top: 0px;
+  left: 0px;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
 }
 .portfolio-content {
   border-bottom: 1px solid #e7e9fc;
