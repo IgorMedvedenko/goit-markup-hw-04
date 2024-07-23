@@ -388,7 +388,7 @@ h6 {
 }
 .footer .container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
 }
 .footer-text {
   font-size: 16px;
@@ -415,4 +415,11 @@ h6 {
   display: flex;
   gap: 16px;
   justify-content: center;
+}
+.footer-logo {
+  margin-right: 120px;
+}
+.footer .icon-link:hover,
+.footer .icon-link:focus {
+  background-color: #31d0aa;
 }
