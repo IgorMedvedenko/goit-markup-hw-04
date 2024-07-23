@@ -131,9 +131,13 @@ h6 {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ bgi.jpg);
+    url(../images/people-office.jpg);
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 700;
@@ -203,6 +207,7 @@ h6 {
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
+  height: 112px;
 }
 .icon {
   display: inline-block;
@@ -251,7 +256,7 @@ h6 {
   height: auto;
 }
 .team-aside {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .team-name {
   font-weight: 500;
@@ -272,6 +277,7 @@ h6 {
 .icon-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 .icon-item {
   width: 40px;
@@ -291,9 +297,11 @@ h6 {
 }
 .icon-icon {
   display: block;
+  fill: #f4f4fd;
 }
-.icon-link:hover {
-  background-color: #31d0aa;
+.icon-link:hover,
+.icon-link:focus {
+  background-color: #404bbf;
 }
 /*---Our Portfolio---*/
 
@@ -402,4 +410,9 @@ h6 {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+}
+.footer-icon-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
